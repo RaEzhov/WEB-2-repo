@@ -46,8 +46,33 @@ ul {
     display: flex;
     color: #d6d5d5;
     align-items: center;
-    min-height: 650px;
+    min-height: 100vh; /*В методичке иначе, но так правильнее. vh - это проценты высоты монитора. Следовательно 100vh - это вся высота монитора.*/
     width: 100%;
     background-size: cover;
     text-align: center;
+}
+
+.banner h2 {
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 2rem;
+}
+
+.scrolldown {
+    position: absolute;
+    left: calc(50% - 52px);
+    margin-top: 15%;
+}
+
+.scrolldown img {
+    margin-bottom: 20px;
+}
+
+.scrolldown p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
 }
